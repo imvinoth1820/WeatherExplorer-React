@@ -1,38 +1,141 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  font-family: "Roboto", sans-serif;;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #2f3640;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-icon img{
+  background: none;
+  height: 20px;
+  margin-top: 2px;
+  margin-top: 5px;
+}
+.container{
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.input-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 2px solid #70e6f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cityInput{
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+.search-icon{
+  padding: 10px;
+  cursor: pointer;
+}
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.image img{
+  width: 160px;
+  height: 160px;
+}
+.temp,
+.location,
+.country {
+  margin-top: 5px;
+  font-size: 35px;
+  color: #333;
+  font-weight: 450;
+  text-transform: uppercase;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temp{
+  font-weight: 500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.location{
+  color: #ffbc00;
+  font-size: 40px;
 }
+.country{
+    font-size: 18px;
+    color: #888;
+    font-weight: 500;
+}
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.cord div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+}
+.cord div span{
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.cord div span:nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  padding-top: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  height: 30px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.element{
+  text-align: center;
+  align-items: center;
+}
+.icon{
+  width: 30px;
+}
+.text{
+  font-size: 12px;
+  color: #3c3b3b;
+}
+.copyright{
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+.copyright span{
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+}
+.loading-message,
+.error-message,
+.city-not-found{
+  margin-top: 10px;
+  color: #888;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
 }
